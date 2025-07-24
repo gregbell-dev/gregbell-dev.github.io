@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>House Hub Home Services</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fefefe;
+      margin: 0;
+      padding: 0;
+      color: #222;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 60px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 120px;
+      margin: 0 auto 20px;
+    }
+
+    h1 {
+      color: #1b3a68;
+      font-size: 26px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .mission em {
+      font-style: italic;
+      font-weight: bold;
+    }
+
+    .cta {
+      font-weight: bold;
+      font-size: 18px;
+      color: #1b3a68;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    input, textarea {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 100%;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    button {
+      background-color: #1b3a68;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 4px;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #16325b;
+    }
+
+    .footer {
+      font-size: 13px;
+      color: #555;
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="House Hub Logo" class="logo" />
+
+    <h1>Reliable Repairs, Right When You Need Them</h1>
+
+    <p class="mission">
+      At House Hub Home Services, we specialize in prompt, professional handyman work for property managers who need it <em>done right the first time</em>. From everyday repairs to urgent fixes, we’re the dependable partner your tenants will thank you for.
+    </p>
+
+    <p class="cta">Need a trustworthy handyman partner?</p>
+    <p>Fill out the form below and we’ll follow up within 24 hours.</p>
+
+    <form action="#" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="tel" name="phone" placeholder="Phone Number" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <textarea name="message" placeholder="Optional message (e.g. property needs, repair types)"></textarea>
+      <button type="submit">Request Follow-Up</button>
+    </form>
+
+    <div class="footer">
+      SERVING PROPERTY MANAGERS ACROSS THE DFW AREA • LICENSED • INSURED • PROMPT SERVICE GUARANTEED
+    </div>
+  </div>
+</body>
+</html>
+
