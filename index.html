@@ -13,47 +13,42 @@
       padding: 0;
       color: #222;
     }
-
     .container {
       max-width: 600px;
-      margin: 5px auto;
+      margin: 0 auto; /* Removed top margin */
       padding: 10px 20px 20px;
       text-align: center;
     }
-
     .logo {
       width: 80%;
       max-width: 300px;
       display: block;
       margin-top: 0;
-      margin-bottom: 10px;
+      margin-bottom: 5px; /* Reduced from 10px */
       padding: 0;
       position: relative;
       left: -20px; 
     }
-
     h1 {
       color: #1b3a68;
       font-size: 26px;
+      margin-top: 0; /* Remove default top margin */
+      margin-bottom: 20px; /* Control bottom margin */
     }
-
     p {
       font-size: 16px;
       line-height: 1.6;
       margin-bottom: 30px;
     }
-
     .mission em {
       font-style: italic;
       font-weight: bold;
     }
-
     .cta {
       font-weight: bold;
       font-size: 18px;
       color: #1b3a68;
     }
-
     form {
       display: flex;
       flex-direction: column;
@@ -61,20 +56,18 @@
       margin-bottom: 20px;
       text-align: left;
     }
-
     input, textarea {
       padding: 10px;
       font-size: 16px;
       border: 1px solid #ccc;
       border-radius: 4px;
       width: 100%;
+      box-sizing: border-box; /* Added for better spacing */
     }
-
     textarea {
       resize: vertical;
       min-height: 100px;
     }
-
     button {
       background-color: #1b3a68;
       color: white;
@@ -85,18 +78,15 @@
       border-radius: 4px;
       width: 100%;
     }
-
     button:hover {
       background-color: #16325b;
     }
-
     .footer {
       font-size: 13px;
       color: #555;
       margin-top: 30px;
       text-align: center;
     }
-
     @media (max-width: 480px) {
       h1 {
         font-size: 22px;
@@ -107,16 +97,12 @@
 <body>
   <div class="container">
     <img src="logo.png" alt="House Hub Logo" class="logo" />
-
     <h1>Reliable Repairs, Right When You Need Them</h1>
-
     <p class="mission">
-      At House Hub Home Services, we specialize in prompt, professional handyman work for property managers who need it <em>done right the first time</em>. From everyday repairs to urgent fixes, we’re the dependable partner your tenants will thank you for.
+      At House Hub Home Services, we specialize in prompt, professional handyman work for property managers who need it <em>done right the first time</em>. From everyday repairs to urgent fixes, we're the dependable partner your tenants will thank you for.
     </p>
-
     <p class="cta">Need a trustworthy handyman partner?</p>
-    <p>Fill out the form below and we’ll follow up within 24 hours.</p>
-
+    <p>Fill out the form below and we'll follow up within 24 hours.</p>
     <form action="#" method="POST">
       <input type="text" name="name" placeholder="Full Name" required />
       <input type="tel" name="phone" placeholder="Phone Number" required />
@@ -124,7 +110,6 @@
       <textarea name="message" placeholder="Optional message (e.g. property needs, repair types)"></textarea>
       <button type="submit">Request Follow-Up</button>
     </form>
-
     <div class="footer">
       SERVING PROPERTY MANAGERS ACROSS THE DFW AREA • LICENSED • INSURED • PROMPT SERVICE GUARANTEED
     </div>
